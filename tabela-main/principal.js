@@ -14,12 +14,12 @@ for (i = 0; i < pacientes.length; i++) {
     //OBTÉM O VALOR PESO
     var tdPeso = paciente.querySelector(".info-peso");
     var peso = tdPeso.textContent;
-    console.log(peso);
+   
 
     //OBTÉM O VALOR ALTURA
     var tdAltura = document.querySelector(".info-altura");
     var altura = tdAltura.textContent;
-    console.log(altura);
+    
 
     //CALCULA IMC
     var IMC = peso / (altura * altura);
@@ -53,3 +53,10 @@ titulo.addEventListener('click', function(){
     alert("Clicou nessa bomba");
 });
 
+var botaoAdicionar = document.querySelector("#adicionar-paciente");
+
+botaoAdicionar.addEventListener('click', 
+    function(event){
+    event.preventDefault();
+    console.log("Paciente adicionado");
+});
